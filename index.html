@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Nethra!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffdee9, #b5fffc);
+      color: #4b0082;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: linear-gradient(to right, #ff6f91, #ff9671);
+      color: white;
+    }
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+    }
+    .section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+      background: #fff4f8;
+      margin-bottom: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #ff6f91;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 180px;
+      border-radius: 15px;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+    .message {
+      background: #fff0f5;
+      padding: 2rem;
+      border-radius: 15px;
+      font-size: 1.1rem;
+      border: 2px dashed #ff6f91;
+    }
+    .surprise {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .hidden-message {
+      display: none;
+      margin-top: 1rem;
+      background: #ffe4ec;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    button {
+      padding: 0.8rem 2rem;
+      border: none;
+      background-color: #ff6f91;
+      color: white;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    button:hover {
+      background-color: #e85a78;
+    }
+    #cake {
+      text-align: center;
+    }
+    .cake {
+      width: 160px;
+      margin: 0 auto 1rem;
+      position: relative;
+    }
+    .cake .layer {
+      background: #ff9671;
+      height: 30px;
+      margin: 5px 0;
+      border-radius: 6px;
+    }
+    .cake .candle {
+      width: 10px;
+      height: 30px;
+      background: #fff;
+      margin: 0 auto;
+      position: relative;
+      top: -10px;
+    }
+    .flame {
+      width: 14px;
+      height: 14px;
+      background: radial-gradient(circle, #ffec00 0%, #ff8c00 60%, #ff0000 100%);
+      border-radius: 50%;
+      position: relative;
+      top: -5px;
+      animation: flicker 0.8s infinite;
+      box-shadow: 0 0 15px 5px rgba(255, 200, 0, 0.8);
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+    }
+    .balloon {
+      position: absolute;
+      bottom: -100px;
+      width: 30px;
+      height: 40px;
+      background-color: #ff6f91;
+      border-radius: 50% 50% 45% 45%;
+      animation: floatUp 8s linear infinite;
+      z-index: 0;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.9; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
+    .countdown-section {
+      background: #ffebf0;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 20px;
+      margin: 2rem auto;
+      max-width: 600px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      animation: pulse 2s infinite;
+    }
+    .countdown-section h2 {
+      color: #e75480;
+    }
+    .countdown, .age-info {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-buddy.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <header>
+    <h1>Happy Birthday Nethra! 🎉</h1>
+    <p>Celebrating the most amazing friend ever 💖</p>
+  </header>
+
+  <div class="section">
+    <h2>Our Friendship</h2>
+    <p>From the moment we met, you’ve made life brighter and better. Here’s to a day as fabulous as you, and to the wonderful memories we’ve shared! 🎂🎁</p>
+  </div>
+
+  <div class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="img/1.jpg" alt="memory 1">
+      <img src="img/2.jpg" alt="memory 2">
+      <img src="img/3.jpg" alt="memory 3">
+      <img src="img/4.jpg" alt="memory 4">
+    </div>
+  </div>
+
+  <div class="countdown-section">
+    <h2>🎂 Birthday Countdown & Age</h2>
+    <p>Time may fly, but every moment with you adds to a beautiful journey! Here's how far you've come:</p>
+    <div class="countdown" id="countdown"></div>
+    <div class="age-info" id="ageInfo"></div>
+    <p>Another year older, wiser, and even more amazing. Keep shining, Nethra! 💖</p>
+  </div>
+    <div class="age-info" id="ageInfo"></div>
+  </div>
+
+  <div class="section message">
+    <h2>Message for Nethra</h2>
+    <p>Dear Nethra, your friendship is a gift I treasure every day. You light up every room with your smile, and I’m beyond lucky to have you in my life. Happy Birthday! 🎊💖</p>
+  </div>
+
+  <div class="section" id="cake">
+    <h2>Your Birthday Cake 🎂</h2>
+    <div class="cake">
+      <div class="candle">
+        <div id="flame" class="flame"></div>
+      </div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div>
+    <button onclick="blowCandles()">Blow the Candles</button>
+  </div>
+
+  <div class="section surprise">
+  <button onclick="showSurprise()">Click for a Surprise 🎁</button>
+  <div id="hidden" class="hidden-message">
+    <h2>🎊 A Special Message Just for You 🎊</h2>
+    <p>Dear Nethra, may your birthday be as sweet and joyful as your beautiful soul. Here’s to magical moments and unforgettable memories! 💖✨</p>
+    <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" alt="birthday surprise gif" style="max-width:100%; border-radius:10px; margin-top:1rem;" />
+  </div>
+</div>
+  </div>
+
+  <script>
+    function blowCandles() {
+      const flame = document.getElementById('flame');
+      if (flame) {
+        flame.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+        flame.style.opacity = '0';
+        flame.style.transform = 'scale(2)';
+        setTimeout(() => flame.style.display = 'none', 500);
+      }
+
+      // Play pop sound effect
+      const audio = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-fast-small-sweep-transition-166.wav');
+      audio.play();
+
+      // Add sparkles effect
+      for (let i = 0; i < 30; i++) {
+        const sparkle = document.createElement('div');
+        sparkle.style.position = 'absolute';
+        sparkle.style.left = flame.getBoundingClientRect().left + window.scrollX + 'px';
+        sparkle.style.top = flame.getBoundingClientRect().top + window.scrollY + 'px';
+        sparkle.style.width = '10px';
+        sparkle.style.height = '10px';
+        sparkle.style.borderRadius = '50%';
+        sparkle.style.background = `hsl(${Math.random() * 360}, 100%, 70%)`;
+        sparkle.style.opacity = 1;
+        sparkle.style.pointerEvents = 'none';
+        sparkle.style.zIndex = 1000;
+
+        document.body.appendChild(sparkle);
+
+        const angle = Math.random() * 2 * Math.PI;
+        const distance = Math.random() * 100 + 50;
+        const x = Math.cos(angle) * distance;
+        const y = Math.sin(angle) * distance;
+
+        sparkle.animate([
+          { transform: 'translate(0, 0)', opacity: 1 },
+          { transform: `translate(${x}px, ${y}px) scale(0.5)`, opacity: 0 }
+        ], {
+          duration: 1200,
+          easing: 'ease-out'
+        });
+
+        setTimeout(() => sparkle.remove(), 1200);
+      }
+
+      setTimeout(() => alert('Candles blown out! Make a wish 🎉'), 800);
+    }
+
+    // Floating balloon animation
+    function createBalloon() {
+      const balloon = document.createElement('div');
+      balloon.classList.add('balloon');
+      balloon.style.left = Math.random() * 100 + 'vw';
+      balloon.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 70%)`;
+      balloon.style.animationDuration = `${Math.random() * 3 + 5}s`;
+      document.body.appendChild(balloon);
+      setTimeout(() => balloon.remove(), 8000);
+    }
+    setInterval(createBalloon, 600);
+    // Birthday Timer and Age Info
+    function updateBirthdayTimer() {
+      const birthday = new Date('1999-06-27');
+      const now = new Date();
+
+      let nextBirthday = new Date(now.getFullYear(), 5, 27);
+      if (now > nextBirthday) nextBirthday.setFullYear(now.getFullYear() + 1);
+
+      const timeDiff = nextBirthday - now;
+      const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
+      const seconds = Math.floor((timeDiff / 1000) % 60);
+
+      document.getElementById("countdown").textContent = `${days}d ${hours}h ${minutes}m ${seconds}s until Nethra's Birthday!`;
+
+      const years = now.getFullYear() - birthday.getFullYear();
+      let months = now.getMonth() - birthday.getMonth();
+      let daysAge = now.getDate() - birthday.getDate();
+      if (daysAge < 0) {
+        months--;
+        daysAge += new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+      }
+      if (months < 0) {
+        months += 12;
+      }
+
+      document.getElementById("ageInfo").textContent = `${years} years, ${months} months, ${daysAge} days old! 🎉`;
+    }
+
+    setInterval(updateBirthdayTimer, 1000);
+    updateBirthdayTimer();
+
+  function showSurprise() {
+  const hidden = document.getElementById('hidden');
+  hidden.style.display = 'block';
+  hidden.scrollIntoView({ behavior: 'smooth' });
+}
+
+</script>
+</body>
+</html>
